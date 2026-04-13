@@ -29,27 +29,11 @@ while theatre_capacity > 0:
         print(f'BOOKING CONFIRMED - {no_of_tickets} tickets')
     else:
         total_rejections += 1
-        print('BOOKING REJECTED - Age restriction')
+        print('''BOOKING REJECTED - Age restriction
+Age must be above 12 for all members''')
 
     if theatre_capacity == 0:
         print('Theatre is now full.')
         break
 
 print(f'Final Report: Total Bookings: {total_bookings}, Total Tickets Sold: {total_tickets}, Rejected Bookings: {total_rejections}, Remaining Seats: {theatre_capacity}')
-         
-    
-
-        
-
-        
-    
-
-    
-    # if no_of_tickets == len(ages_list) and no_of_tickets < theatre_capacity:
-    #     for x in ages_list:
-    #         if x < 12:
-    #             print('BOOKING REJECTED - Age restriction')
-    #         else:
-    #             theatre_capacity = theatre_capacity - no_of_tickets
-
-    #         print(theatre_capacity)
